@@ -1,9 +1,9 @@
-name: CI - Dev
+name: CI - Prod
 
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   build:
@@ -29,4 +29,4 @@ jobs:
           pytest || echo "Sem testes ainda..."
 
       - name: Simular Deploy
-        run: echo "Deploy automático para ambiente DEV (simulado)"
+        run: echo "Deploy automático para ambiente PROD (simulado)"
